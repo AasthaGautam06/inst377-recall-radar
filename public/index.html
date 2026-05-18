@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <title>Recall Radar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <h1>Recall Radar</h1>
-  <p>Food Recall Search App</p>
+  <nav>
+    <h1>Recall Radar</h1>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="watchlist.html">Watchlist</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="search-section">
+      <h2>Search Food Recalls</h2>
+
+      <input
+        type="text"
+        id="keyword"
+        placeholder="Search by product..."
+      />
+
+      <select id="classification">
+        <option value="">All Classifications</option>
+        <option value="Class I">Class I</option>
+        <option value="Class II">Class II</option>
+        <option value="Class III">Class III</option>
+      </select>
+
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="results"></section>
+
+    <section class="chart-section">
+      <canvas id="recallChart"></canvas>
+    </section>
+  </main>
 </body>
 </html>
