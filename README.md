@@ -28,7 +28,11 @@ Detailed developer documentation can be found in:
 
 `docs/developer-manual.md`
 
+## Live Deployment
+https://inst377-recall-radar.vercel.app/
+
 ---
+
 
 # Developer Manual
 
